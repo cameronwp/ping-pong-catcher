@@ -1,0 +1,12 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - 8888:8888
+      - 7000-7100:7000-7100
+    volumes:
+      - ../robotic-manipulation/final-project:/jupyter/notebooks
+    user: "${UID}:${GID}"
+    group_add:
+      - users
