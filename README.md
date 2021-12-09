@@ -1,6 +1,6 @@
 # Ping Pong Catcher
 
-_Demonstrations of catching a ping pong ball with a paddle welded to the end effector of an [iiwa](https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa) with [Drake](https://drake.mit.edu/).
+_Demonstrations of catching a ping pong ball with a paddle welded to the end effector of an [iiwa](https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa) with [Drake](https://drake.mit.edu/)._
 
 See [report.pdf](./report.pdf) to see how it works.
 
