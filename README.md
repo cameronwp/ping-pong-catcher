@@ -4,6 +4,8 @@ _Demonstrations of catching a ping pong ball with a paddle welded to the end eff
 
 See [report.pdf](./report.pdf) to see how it works.
 
+Watch our [presentation on YouTube](https://www.youtube.com/watch?v=c-lpFsNBOzU) to see it in action.
+
 ## Dependencies
 
 * Docker + `docker-compose`
