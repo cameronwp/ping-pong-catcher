@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="ball">
+    <pose>1.05 .15 1 0 0 0</pose>
+    <link name="ball">
+      <inertial>
+        <mass>.001</mass>
+      </inertial>
+      <visual name="ball">
+        <geometry>
+          <sphere>
+            <radius>0.035</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.36570588 0.70196078 0.6352941176 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="ball_collision">
+        <geometry>
+          <sphere>
+            <radius>0.035</radius>
+          </sphere>
+        </geometry>
+        <drake:proximity_properties>
+          <!-- <drake:mesh_resolution_hint>0.005</drake:mesh_resolution_hint>
+          <drake:rigid_hydroelastic></drake:rigid_hydroelastic> -->
+          <!-- <drake:hunt_crossley_dissipation>0.25</drake:hunt_crossley_dissipation> -->
+          <drake:hunt_crossley_dissipation>0.1</drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+        <surface>
+            <bounce>
+                <restitution_coefficient> .5 </restitution_coefficient>
+                <threshold>0.</threshold>
+            </bounce>
+            <friction>
+              <ode>
+                <mu>0.3</mu>
+                <mu2>0.3</mu2>
+              </ode>
+            </friction>
+        </surface>
+      </collision>
+    </link>
+    <!-- <static>1</static> -->
+  </model>
+</sdf>
