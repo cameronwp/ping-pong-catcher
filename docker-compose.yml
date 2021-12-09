@@ -6,7 +6,7 @@ services:
       - 8888:8888
       - 7000-7100:7000-7100
     volumes:
-      - ../robotic-manipulation/final-project:/jupyter/notebooks
+      - ./:/jupyter/notebooks
     user: "${UID}:${GID}"
     group_add:
       - users
